@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom";
 
-function List() {
+function List({ filteredCities }) {
   return (
     <div>
       <ul className="divide-y divide-gray-200">
-        <li className="p-3">
-          <Link to="/schedule" className="text-blue-500 hover:underline">
-            Tirana
-          </Link>
-        </li>
-        <li className="p-3">
-          <Link to="/schedule" className="text-blue-500 hover:underline">
-            Tirana(Airport)
-          </Link>
-        </li>
+        {filteredCities.map((city, index) => (
+          <li key={index} className="p-3">
+            <Link
+              to={`/schedule/${city.name}`}
+              className="text-blue-500 hover:underline"
+            >
+              {city.name}
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

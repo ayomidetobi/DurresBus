@@ -1,0 +1,123 @@
+// src/data.js
+export const cities = [
+  {
+    name: "Tirana",
+    schedules: [
+      { startTime: "08:00", endTime: "10:00", price: 20 },
+      { startTime: "10:00", endTime: "12:00", price: 25 },
+      { startTime: "12:00", endTime: "14:00", price: 30 },
+      { startTime: "14:00", endTime: "16:00", price: 35 },
+      { startTime: "16:00", endTime: "18:00", price: 40 },
+      { startTime: "18:00", endTime: "20:00", price: 45 },
+      { startTime: "20:00", endTime: "22:00", price: 50 },
+    ],
+  },
+  {
+    name: "Shkoder",
+    schedules: [
+      { startTime: "08:00", endTime: "10:00", price: 18 },
+      { startTime: "10:00", endTime: "12:00", price: 22 },
+      { startTime: "12:00", endTime: "14:00", price: 26 },
+      { startTime: "14:00", endTime: "16:00", price: 30 },
+      { startTime: "16:00", endTime: "18:00", price: 35 },
+      { startTime: "18:00", endTime: "20:00", price: 40 },
+      { startTime: "20:00", endTime: "22:00", price: 45 },
+    ],
+  },
+  {
+    name: "Vlore",
+    schedules: [
+      { startTime: "08:00", endTime: "10:00", price: 25 },
+      { startTime: "10:00", endTime: "12:00", price: 30 },
+      { startTime: "12:00", endTime: "14:00", price: 35 },
+      { startTime: "14:00", endTime: "16:00", price: 40 },
+      { startTime: "16:00", endTime: "18:00", price: 45 },
+      { startTime: "18:00", endTime: "20:00", price: 50 },
+      { startTime: "20:00", endTime: "22:00", price: 55 },
+    ],
+  },
+  {
+    name: "Gjirokaster",
+    schedules: [
+      { startTime: "08:00", endTime: "10:00", price: 30 },
+      { startTime: "10:00", endTime: "12:00", price: 35 },
+      { startTime: "12:00", endTime: "14:00", price: 40 },
+      { startTime: "14:00", endTime: "16:00", price: 45 },
+      { startTime: "16:00", endTime: "18:00", price: 50 },
+      { startTime: "18:00", endTime: "20:00", price: 55 },
+      { startTime: "20:00", endTime: "22:00", price: 60 },
+    ],
+  },
+  {
+    name: "Fier",
+    schedules: [
+      { startTime: "08:00", endTime: "10:00", price: 18 },
+      { startTime: "10:00", endTime: "12:00", price: 23 },
+      { startTime: "12:00", endTime: "14:00", price: 28 },
+      { startTime: "14:00", endTime: "16:00", price: 33 },
+      { startTime: "16:00", endTime: "18:00", price: 38 },
+      { startTime: "18:00", endTime: "20:00", price: 43 },
+      { startTime: "20:00", endTime: "22:00", price: 48 },
+    ],
+  },
+  {
+    name: "Korce",
+    schedules: [
+      { startTime: "08:00", endTime: "10:00", price: 20 },
+      { startTime: "10:00", endTime: "12:00", price: 25 },
+      { startTime: "12:00", endTime: "14:00", price: 30 },
+      { startTime: "14:00", endTime: "16:00", price: 35 },
+      { startTime: "16:00", endTime: "18:00", price: 40 },
+      { startTime: "18:00", endTime: "20:00", price: 45 },
+      { startTime: "20:00", endTime: "22:00", price: 50 },
+    ],
+  },
+  {
+    name: "Sarande",
+    schedules: [
+      { startTime: "08:00", endTime: "10:00", price: 28 },
+      { startTime: "10:00", endTime: "12:00", price: 33 },
+      { startTime: "12:00", endTime: "14:00", price: 38 },
+      { startTime: "14:00", endTime: "16:00", price: 43 },
+      { startTime: "16:00", endTime: "18:00", price: 48 },
+      { startTime: "18:00", endTime: "20:00", price: 53 },
+      { startTime: "20:00", endTime: "22:00", price: 58 },
+    ],
+  },
+  {
+    name: "Elbasan",
+    schedules: [
+      { startTime: "08:00", endTime: "10:00", price: 17 },
+      { startTime: "10:00", endTime: "12:00", price: 22 },
+      { startTime: "12:00", endTime: "14:00", price: 27 },
+      { startTime: "14:00", endTime: "16:00", price: 32 },
+      { startTime: "16:00", endTime: "18:00", price: 37 },
+      { startTime: "18:00", endTime: "20:00", price: 42 },
+      { startTime: "20:00", endTime: "22:00", price: 47 },
+    ],
+  },
+  {
+    name: "Berat",
+    schedules: [
+      { startTime: "08:00", endTime: "10:00", price: 16 },
+      { startTime: "10:00", endTime: "12:00", price: 21 },
+      { startTime: "12:00", endTime: "14:00", price: 26 },
+      { startTime: "14:00", endTime: "16:00", price: 31 },
+      { startTime: "16:00", endTime: "18:00", price: 36 },
+      { startTime: "18:00", endTime: "20:00", price: 41 },
+      { startTime: "20:00", endTime: "22:00", price: 46 },
+    ],
+  },
+  {
+    name: "Lushnje",
+    schedules: [
+      { startTime: "08:00", endTime: "10:00", price: 12 },
+      { startTime: "10:00", endTime: "12:00", price: 17 },
+      { startTime: "12:00", endTime: "14:00", price: 22 },
+      { startTime: "14:00", endTime: "16:00", price: 27 },
+      { startTime: "16:00", endTime: "18:00", price: 32 },
+      { startTime: "18:00", endTime: "20:00", price: 37 },
+      { startTime: "20:00", endTime: "22:00", price: 42 },
+    ],
+  },
+];
