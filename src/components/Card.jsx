@@ -8,6 +8,9 @@ function Card({ startTime, endTime, price, waitingTime }) {
     setIsOpen(!isOpen);
   };
 
+  // Determine if waiting time is zero (i.e., the bus has already departed)
+  const isWaitingZero = waitingTime === "0h 0m";
+
   return (
     <div
       onClick={toggleOpen}
@@ -19,7 +22,11 @@ function Card({ startTime, endTime, price, waitingTime }) {
           <span className="text-2xl font-normal">
             {startTime} → {endTime}
           </span>
-          <span className="text-gray-700 text-sm font-normal">
+          <span
+            className={`text-sm font-normal ${
+              isWaitingZero ? "text-red-600" : "text-green-600"
+            }`}
+          >
             {waitingTime}
           </span>
         </div>

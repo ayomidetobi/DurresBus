@@ -15,6 +15,29 @@ function Schedule() {
     );
   }
 
+  // Helper function to calculate waiting time
+  const calculateWaitingTime = (startTime) => {
+    const [startHour, startMinutes] = startTime.split(":").map(Number);
+
+    const now = new Date();
+    const currentHour = now.getHours();
+    const currentMinutes = now.getMinutes();
+
+    const start = new Date();
+    start.setHours(startHour, startMinutes, 0, 0); // Set the start time
+
+    const diff = start - now; // Difference in milliseconds
+
+    if (diff <= 0) {
+      return "0h 0m"; // If the start time has already passed
+    }
+
+    const diffHours = Math.floor(diff / (1000 * 60 * 60)); // Convert milliseconds to hours
+    const diffMinutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)); // Remaining minutes
+
+    return `${diffHours}h ${diffMinutes}m`;
+  };
+
   return (
     <div>
       <Header />
@@ -29,7 +52,7 @@ function Schedule() {
           startTime={schedule.startTime}
           endTime={schedule.endTime}
           price={schedule.price}
-          waitingTime={`in 2h`}
+          waitingTime={calculateWaitingTime(schedule.startTime)}
         />
       ))}
     </div>
